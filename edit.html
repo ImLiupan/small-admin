@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 360浏览器默认使用Webkit内核 -->
+	<meta name="renderer" content="webkit">
+	<!-- 禁止搜索引擎抓取 -->
+	<meta name="robots" content="nofollow">
+	<!-- 禁止百度SiteAPP转码 -->
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<title>后台管理</title>
+	<link rel="stylesheet" href="lib/modal/modal.css">
+	<link rel="stylesheet" href="lib/viewer/viewer.min.css">
+	<link rel="stylesheet" href="lib/select2/select2.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="navbar">
+		<div class="navbar-header">
+			<div class="logo">XAFC</div>
+			<div class="logo-text">XA</div>
+		</div>
+		<div class="navbar-left">
+			<a href="javascript:;" class="triggerMenu"><i class="xa-special xa-special-menu"></i></a>
+		</div>
+		<div class="navbar-title">
+			这里可以写文字
+		</div>
+		<div class="navbar-right">
+			<a href="#" class=""><i class="xa-special xa-special-tuichu"></i> 退出</a>
+		</div>
+	</div>
+	<!-- 菜单栏 -->
+	<ul class="menu">
+    	<li class="menu-item active">
+            <a href="">
+            	<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">选中状态</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="">
+            	<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">无二级菜单</span>
+            </a>
+        </li>
+        <li class="menu-item active has-sub open">
+			<a href="javascript:;">
+				<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">选中状态</span>
+			</a>
+			<ul class="two-menu">
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item active">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			</ul>
+		</li>
+		<li class="menu-item has-sub">
+			<a href="javascript:;">
+				<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">二级菜单</span>
+			</a>
+			<ul class="two-menu">
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			</ul>
+		</li>
+	</ul>
+	<!-- 主体内容区 -->
+	<div class="content">
+		<div class="content-scroll">
+			<div class="h3-title">
+				<div class="pull-left">
+					<a href="index.html" class="btn btn-primary">返回</a>
+				</div>
+				<b>编辑 / 添加</b>
+			</div>
+			<div class="form-wrap">
+				<form action="" class="form-horizontal clearfix">
+					
+					<!-- 普通文本框 -->
+					<div class="form-group col-4">
+                        <label class="control-label">姓名：</label>
+                        <input type="text" class="form-control" name="name" placeholder="姓名" autocomplete="off">
+                    </div>
+                    <div class="col-12"></div>
+                    <div class="form-group col-4">
+                        <label class="control-label">姓名：</label>
+                        <input type="text" class="form-control" name="name" placeholder="姓名" autocomplete="off">
+                    </div>
+                    <div class="form-group col-4">
+                        <label class="control-label">姓名：</label>
+                        <input type="text" class="form-control" name="name" placeholder="姓名" autocomplete="off">
+                    </div>
+
+                    <!-- 下拉选项（select） -->
+                    <div class="form-group col-2">
+                        <label class="control-label">姓名：</label>
+                        <select name="state" class="form-control select2">
+                    		<option value="">状态</option>
+                    		<option value="2">选项21</option>
+                    		<option value="3">选项3</option>
+                    		<option value="4">选项4</option>
+                    		<option value="5">选项5</option>
+                    		<option value="6">选项61</option>
+                    		<option value="7">选项7</option>
+                    		<option value="8">选项8</option>
+                    		<option value="9">选项19</option>
+                    	</select>
+                    </div>
+                    <div class="form-group col-2">
+                        <label class="control-label">姓名：</label>
+                        <select name="state" class="form-control select2">
+                    		<option value="">状态</option>
+                    		<option value="2">选项21</option>
+                    		<option value="3">选项3</option>
+                    		<option value="4">选项4</option>
+                    		<option value="5">选项5</option>
+                    		<option value="6">选项61</option>
+                    		<option value="7">选项7</option>
+                    		<option value="8">选项8</option>
+                    		<option value="9">选项19</option>
+                    	</select>
+                    </div>
+
+                    <!-- 多行文本框 -->
+                    <div class="form-group col-12">
+                        <label class="control-label">姓名：</label>
+						<textarea name="" id="" class="form-control" rows="3" placeholder="姓名"></textarea>
+                    </div>
+
+                    <!-- 复选 -->
+                    <div class="form-group col-12">
+                        <label class="control-label">姓名：</label>
+                        <label class="checkbox">
+							<input name="group[]" type="checkbox" value="zhu_role">
+							<span><i class="xa-special xa-special-duihao"></i></span> Array								
+						</label>
+						&nbsp;&nbsp;
+						<label class="checkbox">
+							<input name="group[]" type="checkbox" value="zhu_role">
+							<span><i class="xa-special xa-special-duihao"></i></span> Array								
+						</label>
+                    </div>
+
+                    <!-- 单选 -->
+                    <div class="form-group col-12">
+                        <label class="control-label">姓名：</label>
+                        <label class="radio">
+							<input type="radio" name="act" value="add">
+							<span></span> 添加角色
+						</label>
+						&nbsp;&nbsp;
+						<label class="radio">
+							<input type="radio" name="act" value="add">
+							<span></span> 添加角色
+						</label>
+                    </div>
+
+                    <!-- 图片容器 -->
+                    <div class="form-group col-12" id="img-wrapper">
+                        <label class="control-label">图片集合：</label>
+                        <div class="row">
+	                        <div class="img-wrap col-2">
+								<img src="http://img2.xafc.com/housecover/20160316/56e8d0c406e98.jpg_360x270.jpg" width="100%">
+								<input type="hidden" name="img[]">
+								<div class="operation-wrap">
+									<i class="xa-special xa-special-hs"></i>
+								</div>
+							</div>
+							<div class="img-wrap col-2">
+								<img src="http://img2.xafc.com/housecover/20160316/56e8d0c406e98.jpg_360x270.jpg" width="100%">
+								<input type="hidden" name="img[]">
+								<div class="operation-wrap">
+									<i class="xa-special xa-special-hs"></i>
+								</div>
+							</div>
+						</div>
+                    </div>
+
+
+                    <!-- 提交按钮 -->
+					<div class="col-12">
+						<hr>
+					</div>
+                    <div class="form-group col-12">
+						<button type="button" onclick="editConfirm()" class="btn btn-primary" style="padding: 4px 30px">提交</button>
+                    </div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 保存弹窗 -->
+	<div class="modal fade" id="editModal">
+	    <div class="modal-dialog modal-sm">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel">确认</h4>
+	            </div>
+	            <div class="modal-body">是否修改？</div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-primary">确认</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/viewer/viewer.min.js"></script>
+	<script src="lib/modal/modal.js"></script>
+	<script src="lib/select2/select2.min.js"></script>
+	<script src="js/index.js"></script>
+
+	<script>
+		var viewer = null;
+		function newViewer(){
+			viewer = new Viewer(document.getElementById('img-wrapper'), {
+				url: 'data-original',
+				fullscreen: false,
+				viewed: function() {
+					$('.viewer-container').click(function(event) {
+						var target = event.target;
+						if (target.className == 'viewer-canvas') viewer.hide();
+					})
+				}
+			});
+		}
+		newViewer();
+
+		$('.select2').select2({
+			width:'100'
+		}).on('change',function(){
+			$('#screen-form').submit();
+		});
+
+		// 删除照片
+		$('.xa-special-hs').on('click',function(){
+			$(this).parents('.img-wrap').remove();
+			viewer.destroy();
+			newViewer();
+		})
+
+		// 提交二次确认
+		function editConfirm() {
+			$('#editModal').modal();
+		}
+
+		$('.btn-primary','#editModal').on('click',function(){
+			$('form').submit();
+		})
+	</script>
+</body>
+</html>

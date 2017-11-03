@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 360浏览器默认使用Webkit内核 -->
+	<meta name="renderer" content="webkit">
+	<!-- 禁止搜索引擎抓取 -->
+	<meta name="robots" content="nofollow">
+	<!-- 禁止百度SiteAPP转码 -->
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<title>后台管理</title>
+	<link rel="stylesheet" href="lib/modal/modal.css">
+	<link rel="stylesheet" href="lib/viewer/viewer.min.css">
+	<link rel="stylesheet" href="lib/select2/select2.min.css">
+	<link rel="stylesheet" href="lib/dateRangeSelect/dateRangeSelect.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="navbar">
+		<div class="navbar-header">
+			<div class="logo">XAFC</div>
+			<div class="logo-text">XA</div>
+		</div>
+		<div class="navbar-left">
+			<a href="javascript:;" class="triggerMenu"><i class="xa-special xa-special-menu"></i></a>
+		</div>
+		<div class="navbar-title">
+			这里可以写文字
+		</div>
+		<div class="navbar-right">
+			<a href="#" class=""><i class="xa-special xa-special-tuichu"></i> 退出</a>
+		</div>
+	</div>
+	<!-- 菜单栏 -->
+	<ul class="menu">
+    	<li class="menu-item active">
+            <a href="">
+            	<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">选中状态</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="">
+            	<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">无二级菜单</span>
+            </a>
+        </li>
+        <li class="menu-item active has-sub open">
+			<a href="javascript:;">
+				<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">选中状态</span>
+			</a>
+			<ul class="two-menu">
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item active">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			</ul>
+		</li>
+		<li class="menu-item has-sub">
+			<a href="javascript:;">
+				<i class="menu-icon xa-special xa-special-shouyeliebiao"></i><span class="menu-title">二级菜单</span>
+			</a>
+			<ul class="two-menu">
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			    <li class="menu-item">
+			    	<a href="">一二三四五六七</a>
+			    </li>
+			</ul>
+		</li>
+	</ul>
+	<!-- 主体内容区 -->
+	<div class="content">
+		<div class="content-scroll">
+			<div class="h3-title">
+				标题
+				<div class="pull-right">
+					<a href="edit.html" class="btn btn-primary">添加记录</a>
+				</div>
+			</div>
+			<div class="screen-wrap clearfix">
+				<form action="" id="screen-form">
+					<!-- 排序隐藏域，如果不存在排序，请删除 -->
+					<input type="hidden" name="order">
+					<!-- 要排序的是那一列 -->
+					<input type="hidden" name="order_column">
+			
+					<div class="pull-left">
+                    	<select name="state" id="select1" class="form-control">
+                    		<option value="">状态</option>
+                    		<option value="2">选项21</option>
+                    		<option value="3">选项3</option>
+                    		<option value="4">选项4</option>
+                    		<option value="5">选项5</option>
+                    		<option value="6">选项61</option>
+                    		<option value="7">选项7</option>
+                    		<option value="8">选项8</option>
+                    		<option value="9">选项19</option>
+                    	</select>
+                    </div>
+                    <div class="pull-left">
+                    	<input type="text" class="form-control form-date" name="time" id="date_range_select" placeholder="请选择时间范围" style="width: 192px;">
+                    </div>
+					<div class="input-group pull-left">
+                        <input type="text" class="form-control" name="username" placeholder="请输入姓名">
+                        <span class="input-group-btn">
+                        	<button type="submit" class="btn btn-primary">搜索</button>
+                        </span>
+                    </div>
+				</form>
+				<br>
+			</div>
+			<div class="table-wrap">
+				<div class="table-scroll">
+					<table class="table table-hover table-fixed">
+						<thead>
+							<tr>
+								<th width="20">ID</th>
+								<th width="80">姓名</th>
+								<th width="150">时间</th>
+								<th width="100" class="order">手机号</th>
+								<th width="200" class="order order-asc">长文本解决方案</th>
+								<th width="450" class="order order-desc">状态</th>
+								<th width="240">图片</th>
+								<th width="130">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>一二三四</td>
+								<td>2016-12-12 01:56:00</td>
+								<td>18119635374</td>
+								<td class="text-ellipsis" title="一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七">
+									一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七一二三四五六七
+								</td>
+								<td>
+									<span class="label label-default">Default</span>
+									<span class="label label-primary">Primary</span>
+									<span class="label label-success">Success</span>
+									<span class="label label-info">Info</span>
+									<span class="label label-warning">Warning</span>
+									<span class="label label-danger">Danger</span>
+									<span class="label label-dark">Dark</span>
+								</td>
+								<td id="img-wrapper-1">
+									<div class="img-wrap">
+										<img src="http://img2.xafc.com/housecover/20160316/56e8d0c406e98.jpg_360x270.jpg">
+									</div>
+									<div class="img-wrap">
+										<img src="http://img2.xafc.com/housecover/20170110/5874551019ddb.jpg_360x270.jpg">
+									</div>
+									<div class="img-wrap">
+										<img src="http://drs.xafc.com:9012/statics/basic/admin/images/logo.jpg">
+									</div>
+								</td>
+								<td>
+									<a href="" class="btn btn-primary">编辑</a>
+									<a href="javascript:;" class="btn btn-danger" onclick="deleteConfirm(100)">删除</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="table-footer clearfix">
+					<div class="infor">当前第 1 页，共 536 条记录</div>
+					<ul class="pagination">
+						<li><a href="">上一页</a></li> 
+						<li><a href="">1</a></li>
+						<li class="active"><span>2</span></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a href="">6</a></li>
+						<li><a href="">下一页</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 删除弹窗 -->
+	<div class="modal fade" id="deleteModal">
+	    <div class="modal-dialog modal-sm">
+	        <div class="modal-content">
+	        	<form action="">
+	        		<input type="hidden" name="id" value="">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal">&times;</button>
+		                <h4 class="modal-title" id="myModalLabel">确认</h4>
+		            </div>
+		            <div class="modal-body">是否删除？</div>
+		            <div class="modal-footer">
+		                <button type="submit" class="btn btn-primary">确认</button>
+		                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		            </div>
+	            </form>
+	        </div>
+	    </div>
+	</div>
+
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/viewer/viewer.min.js"></script>
+	<script src="lib/modal/modal.js"></script>
+	<script src="lib/select2/select2.min.js"></script>
+	<script src="lib/dateRangeSelect/dateRangeSelect.js"></script>
+	<script src="js/index.js"></script>
+
+	<script>
+		// 循环初始化图片预览插件
+		$(document).ready(function () {
+			var imgWrapper = $('[id^=img-wrapper-]');
+			$.each(imgWrapper, function(index, val) {
+				new Viewer(document.getElementById(val.id), {
+					url: 'data-original',
+					fullscreen: false,
+					viewed: function() {
+						$('.viewer-container').click(function(event,a) {
+							var target = event.target;
+							if (target.className == 'viewer-canvas'){
+								$('#' + val.id)[0].viewer.hide();
+							}
+						})
+					}
+				});
+			});
+		});
+
+		// 删除
+		function deleteConfirm(id) {
+			if(!id){
+				alert('出错了，id不存在！');
+				return;
+			}
+			$('#deleteModal').find('[name="id"]').val(id);
+			$('#deleteModal').modal();
+		}
+
+		$('#select1').select2({
+			width:'100'
+		}).on('change',function(){
+			$('#screen-form').submit();
+		});
+
+		new DateRangeSelect('date_range_select', {
+			success:function(obj){
+				$('[name="time"]').val(obj.start_date + ',' + obj.end_date);
+				$('#screen-form').submit();
+			}
+		});
+	</script>
+</body>
+</html>
